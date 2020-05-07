@@ -46,6 +46,32 @@ router.post('/create', async (req, res) => {
     }
 });
 
+//view ticket status based on ticket_id
+router.get('/ticket/:ticketId', async (req, res)=>{
+    try{
+    //    console.log(req.params.ticketId);
+       const { ticketId }  = req.params;
+       const ticketData = await Ticket.findById(ticketId);
+       if(ticketData){
+           return res.status(200).json({status : ticketData.is_booked});
+       }
+    }
+    catch(err){
+        res.status(404).json({message : err});
+    }
+})
+
+//view all closest tickets
+router.get('/ticket/open', async (req, res)=>{
+    try{
+       const data = await Ticket.find({is_booked : false}).limit(10);
+       return res.status(200).send(data);
+    }
+    catch(err){
+       return res.status(404).send("Not found");
+    }
+})
+
 
 
 module.exports = router;
