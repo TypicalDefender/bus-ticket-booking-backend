@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+
+<html>
+
+   <head>
+      <title>Bus Ticket Service</title>
+      <link rel="shortcut icon" href="https://pbs.twimg.com/profile_images/1056066836473806848/s6O-MrmT_400x400.jpg" type="image/x-icon"/>
+      <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" type="text/css">
+      <link href="style.css" rel="stylesheet" type="text/css">
+   </head>
+
+   <body>
+
+      <div class="container">
+        <h2>API Project: Bus Ticket Booking Microservice</h2>
+        <h3>Available endpoints</h3>
+        <ol class="user-stories">
+          
+          <li>To book a ticket <code>POST [project_url]/api/create</code> </li>
+          <li>To update ticket status and user details <code>PUT [project_url]/api/ticket/:ticketId</code></li>
+          <li>To view ticket status based on ticket_id <code>GET [project_url]/api/ticket/:ticketId</code></li>
+          <li> To get the tickets which are already booked<code>GET [project_url]/api/tickets/open</code> </li>
+          <li>To get the tickets which are not booked <code>GET [project_url]/api/tickets/close</code></li>
+          <li>To get the person details with the ticketId<code>GET [project_url]/api/user/:ticketId</code></li>
+          <li>To signup to the token for admin ticket api<code>POST [project_url]/private/admin/signup</code></li>
+          <li>To login to the token for admin ticket api <code>POST [project_url]/private/admin/logint</code></li>
+          <li>To reset all ticket data as an admin <code>POST [project_url]/private/tickets/reset</code></li>
+        </ol>
+
+        <h3>API Documentation can be found at:</h3>
+        <ul>
+          <li><a href="https://www.shortto.com/apidocumentation">www.shortto.com/apidocumentation</a></li>
+        </ul>
+
+        
+      </div>
+      <div class="footer">
+        <p>
+         code hosted at <a href="https://github.com/TypicalDefender/bus-ticket-booking-backend">GitHub</a>
+        </p>
+      </div>
+   </body>
+
+</html>

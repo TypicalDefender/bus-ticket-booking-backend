@@ -26,6 +26,14 @@ const app = express();
 if (app.get('env') == "development") {
     app.use(morgan('tiny'));
 }
+
+app.use(express.static('public'));
+
+// http://expressjs.com/en/starter/basic-routing.html
+app.get("/", function (req, res) {
+  res.sendFile(__dirname + '/views/index.html');
+});
+
 app.use(express.json());
 // app.use('/api', user);
 app.use('/api', ticket);

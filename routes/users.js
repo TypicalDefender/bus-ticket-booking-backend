@@ -69,7 +69,7 @@ router.post('/admin/login', async (req, res) => {
         }, "jwtPrivateKey");
 
         //send token in header
-        return res.header('x-auth-header', token).status(200).send("login successful");
+        return res.header('x-auth-header', token).status(200).send({message : "login successful check the header"});
     } catch (err) {
         console.log(err);
     }

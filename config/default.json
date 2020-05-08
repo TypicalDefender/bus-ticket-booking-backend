@@ -1,6 +1,6 @@
 {
     "development": {
-        "MONGO_URI": "mongodb://localhost/playground",
+        "MONGO_URI": "mongodb+srv://new_dbuser:m1yXy11g9JZFzW9L@cluster0-bjhr4.mongodb.net/test?retryWrites=true&w=majority",
         "MONGO_OPTIONS": { "db": { "safe": true } }
     },
     "production": {
