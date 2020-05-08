@@ -15,5 +15,8 @@ or
 
 **Monitoring Results:**
 
-**1) Using doctor**
+**1) Using doctor - npm run doctor**
 ![Image description](https://github.com/TypicalDefender/bus-ticket-booking-backend/blob/master/Screenshot%20from%202020-05-08%2020-49-21.png)
+
+**2) Using bubbleprof - npm run bubble**
+![Image description](https://github.com/TypicalDefender/bus-ticket-booking-backend/blob/master/Screenshot%20from%202020-05-08%2020-52-59.png)
