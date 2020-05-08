@@ -16,4 +16,4 @@ or
 **Monitoring Results:**
 
 **1) Using doctor**
-![Image description](Screenshot from 2020-05-08 20-49-21.png)
+![Image description](https://github.com/TypicalDefender/bus-ticket-booking-backend/blob/master/Screenshot%20from%202020-05-08%2020-49-21.png)
