@@ -4,6 +4,7 @@ const express = require('express');
 const mongoose = require('mongoose');
 const morgan = require('morgan');
 const ticket = require('./routes/tickets');
+const admin = require('./routes/users');
 
 const app = express();
 
@@ -28,6 +29,7 @@ if (app.get('env') == "development") {
 app.use(express.json());
 // app.use('/api', user);
 app.use('/api', ticket);
+app.use('/private', admin);
 //port setup
 const PORT = process.env.PORT || 8080;
 

@@ -4,6 +4,7 @@
   "description": "",
   "main": "app.js",
   "dependencies": {
+    "bcrypt": "^4.0.1",
     "clinic": "^5.0.1",
     "config": "^3.3.1",
     "express": "^4.17.1",
@@ -11,12 +12,13 @@
     "jsonwebtoken": "^8.5.1",
     "mongoose": "^5.9.12",
     "mongoose-unique-validator": "^2.0.3",
-    "morgan": "^1.10.0"
+    "morgan": "^1.10.0",
+    "nodemon": "^2.0.3"
   },
   "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node app.js",
+    "start": "nodemon app.js",
     "doctor": "clinic doctor -- node app.js",
     "bubble": "clinic bubbleprof -- node app.js",
     "flame": "clinic flame -- node app.js"
