@@ -15,8 +15,10 @@ or
 
 **Monitoring Results:**
 
-**1) Using doctor - npm run doctor**
-![Image description](https://github.com/TypicalDefender/bus-ticket-booking-backend/blob/master/Screenshot%20from%202020-05-08%2020-49-21.png)
+**1) Using doctor**
+![doctor](https://github.com/TypicalDefender/bus-ticket-booking-backend/blob/master/Screenshot%20from%202020-05-08%2020-49-21.png)
 
-**2) Using bubbleprof - npm run bubble**
-![Image description](https://github.com/TypicalDefender/bus-ticket-booking-backend/blob/master/Screenshot%20from%202020-05-08%2020-52-59.png)
+**2) Using bubbleprof**
+![bubble](https://github.com/TypicalDefender/bus-ticket-booking-backend/blob/master/Screenshot%20from%202020-05-08%2020-52-59.png)
+**3) Using flame**
+![flame](https://github.com/TypicalDefender/bus-ticket-booking-backend/blob/master/Screenshot%20from%202020-05-08%2020-58-18.png)
