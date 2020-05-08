@@ -1,0 +1,35 @@
+{
+  "name": "bus-ticket-booking-backend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "dependencies": {
+    "clinic": "^5.0.1",
+    "config": "^3.3.1",
+    "express": "^4.17.1",
+    "joi": "^14.3.1",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.9.12",
+    "mongoose-unique-validator": "^2.0.3",
+    "morgan": "^1.10.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js",
+    "doctor": "clinic doctor -- node app.js",
+    "bubble": "clinic bubbleprof -- node app.js",
+    "flame": "clinic flame -- node app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TypicalDefender/bus-ticket-booking-backend.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/TypicalDefender/bus-ticket-booking-backend/issues"
+  },
+  "homepage": "https://github.com/TypicalDefender/bus-ticket-booking-backend#readme"
+}
