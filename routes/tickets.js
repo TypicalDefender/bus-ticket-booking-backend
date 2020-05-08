@@ -6,7 +6,8 @@ const {
     User,
     userValidate
 } = require('../models/user')
-
+const auth = require('../middleware/auth');
+const adminCheck = require('../middleware/adminCheck');
 
 const router = express.Router()
 
@@ -107,7 +108,7 @@ router.get('/ticket/:ticketId', async (req, res) => {
         });
     }
 })
-
+//all tickets with is_booked false
 router.get('/tickets/open', async (req, res) => {
     try {
         const data = await Ticket.find({
@@ -121,6 +122,7 @@ router.get('/tickets/open', async (req, res) => {
     }
 })
 
+//all tickets with is_booked true
 router.get('/tickets/close', async (req, res) => {
     try {
         const data = await Ticket.find({
@@ -134,6 +136,7 @@ router.get('/tickets/close', async (req, res) => {
     }
 })
 
+//get person data with ticketId
 router.get('/user/:ticketId', async (req, res) => {
     try {
         const {
@@ -155,5 +158,22 @@ router.get('/user/:ticketId', async (req, res) => {
     }
 })
 
-
+//reset ticket data as an Admin
+router.post('/tickets/reset', [auth, adminCheck], async (req, res) => {
+    try {
+        const updateToDo = await Ticket.update({}, {
+            $set: {
+                is_booked: false
+            }
+        }, {
+            upsert: true,
+            multi: true
+        });
+        return res.status(200).json({
+            message: "updation successful"
+        });
+    } catch (err) {
+        return res.status(404).send("reset request cannot be proceed right now. Try again later");
+    }
+})
 module.exports = router;
