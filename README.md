@@ -7,11 +7,22 @@ The stack used here is MEN(MongoDB, Express, NodeJS)
 
 **The App is deployed on AWS ec2 and can be accessed at:**
 
-> http://ec2-15-206-100-217.ap-south-1.compute.amazonaws.com:8080
+> http://15.206.100.217:8080/
 
 or
 
-> http://15.206.100.217:8080/
+> http://ec2-15-206-100-217.ap-south-1.compute.amazonaws.com:8080
+
+**List of TicketIds for testing**
+* 5eb610112171a40c45596b82
+* 5eb6110c2171a40c45596b84
+* 5eb6113e2171a40c45596b86
+* 5eb611522171a40c45596b88
+* 5eb611772171a40c45596b8a
+* 5eb6119c2171a40c45596b8c
+* 5eb6132cd6e5c11427b1f8db
+* 5eb6134dd6e5c11427b1f8dd
+
 
 **Monitoring Results:**
 
