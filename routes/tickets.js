@@ -17,8 +17,8 @@ router.post('/create', async (req, res) => {
         const {
             error
         } = userValidate(req.body.passenger);
-        if (error || req.body.passenger.seat_number > 40) {
-            return res.status(400).send("Invalid Input");
+        if (error || parseInt(req.body.seat_number) > 40) {
+            return res.status(400).send("Invalid input");
         }
         let exists = await Ticket.findOne({
             is_booked: true,
@@ -40,7 +40,7 @@ router.post('/create', async (req, res) => {
             }
         }
     } catch (err) {
-        return res.status(403).send("Already exists");
+        return res.status(403).send("An unknown error occured");
     }
 });
 
