@@ -28,7 +28,7 @@ router.post('/admin/signup', async (req, res) => {
         }
         user = new Admin(req.body);
         const salt = await bcrypt.genSalt(10);
-        console.log(salt);
+        // console.log(salt);
         user.password = await bcrypt.hash(user.password, salt);
         const data = await user.save();
         const token = Jwt.sign({

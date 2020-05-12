@@ -165,7 +165,6 @@ router.post('/tickets/reset', [auth, adminCheck], async (req, res) => {
                 is_booked: false
             }
         }, {
-            upsert: true,
             multi: true
         });
         return res.status(200).json({
